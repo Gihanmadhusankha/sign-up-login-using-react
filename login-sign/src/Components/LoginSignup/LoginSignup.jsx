@@ -1,5 +1,5 @@
 import React from 'react'
-import '.\LoginSignup.css'
+import './LoginSignup.css'
 
 
 import user_icon from '../Assets/person.png'
@@ -17,16 +17,22 @@ const LoginSignup = () => {
          <div className="inputs">
             <div className="input">
                 <img src={user_icon} alt="" />
-                <input type="text"/>
+                <input type="text" placeholder='Name'/>
             </div>
             <div className="input">
                 <img src={email_icon} alt="" />
-                <input type="email"/>
+                <input type="email"placeholder='Email Id'/>
             </div>
             <div className="input">
                 <img src={password_icon} alt="" />
-                <input type="password"/>
+                <input type="password"placeholder='Password'/>
             </div>
+         </div>
+          <div className="fprget-passsword">Lost Password ? <span>Click Here!</span></div>
+         <div className="submit-container">
+            <div className="submit">Sign Up</div>
+            <div className="submit">Login</div>
+
          </div>
     </div>
   )
