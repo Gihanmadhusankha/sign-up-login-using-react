@@ -1,6 +1,5 @@
-import React from 'react'
+import React , {useState} from "react";
 import './LoginSignup.css'
-
 
 import user_icon from '../Assets/person.png'
 import email_icon from '../Assets/email.png'
@@ -17,6 +16,7 @@ const LoginSignup = () => {
 
          </div>
          <div className="inputs">
+
             {action==="Login"?<div></div>:<div className="input">
                 <img src={user_icon} alt="" />
                 <input type="text" placeholder='Name'/>
